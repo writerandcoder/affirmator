@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- Primary Meta Tags -->
+<title>Affirmator</title>
+<meta name="title" content="Affirmator - Meditation combining affirmation & Brain stimulation" />
+<meta name="description" content="Modes include: Fear and uncertainty meditation, social anxiety mindfulness, loving kindness meditation, and guided mindfullness meditation. Delta, Theta, Alpha, Beta, and Gamma Brain Stimulation" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rickybrowne.com/meditator/" />
+<meta property="og:title" content="Affirmator - Meditation combining affirmation & Brain stimulation" />
+<meta property="og:description" content="Modes include: Fear and uncertainty meditation, social anxiety mindfulness, loving kindness meditation, and guided mindfullness meditation. Delta, Theta, Alpha, Beta, and Gamma Brain Stimulation" />
+<meta property="og:image" content="fb.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://rickybrowne.com/meditator/" />
+<meta property="twitter:title" content="Affirmator - Meditation combining affirmation & Brain stimulation" />
+<meta property="twitter:description" content="Modes include: Fear and uncertainty meditation, social anxiety mindfulness, loving kindness meditation, and guided mindfullness meditation. Delta, Theta, Alpha, Beta, and Gamma Brain Stimulation" />
+<meta property="twitter:image" content="fb.png" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+  <style>
+
+#grammarly-extension, .pro-writing-aid-extension {
+    display: none !important;
+  }
+
+
+@media only screen and (max-width: 767px) {
+
+  .info {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.0em;
+  cursor: pointer;
+}
+
+.info:hover,
+.info:active,
+.info:visited {
+  color: black; /* Set the text color to black for hover, active, and visited states */
+}
+
+.info2 {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.2em;
+  cursor: pointer;
+
+}
+
+.info2:hover,
+.info2:active,
+.info2:visited {
+  color: black; /* Set the text color to black for hover, active, and visited states */
+}
+
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle, rgb(249, 247, 236) 15%,  rgb(239, 243, 224) 22%, rgb(239, 243, 224) 10%,rgba(248, 243, 182, 0.603) 48%);
+    }
+
+    #cont0 {
+        width: 100%;
+      height: 150px;
+   
+      align-items: center;
+            justify-content: center;
+      position: absolute;
+      top: 20px;
+            left: 0px;
+            text-align: center;
+z-index: 1000;
+    }
+    #cont1 {
+        width: 100%;
+      height: 220px;
+   
+      align-items: center;
+            justify-content: center;
+      position: absolute;
+      bottom: 5px;
+            left: 0px;
+            text-align: center;
+z-index: 4000;
+    }
+    #ie {
+      width: 300px;
+    }
+
+    .eye-container {
+      position: relative;
+    }
+
+    .eye {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(231, 207, 183, 0.813) 20%,   rgb(164, 164, 164) 50%);
+      z-index: 1;
+    }
+
+    .pulse {
+        animation: pulsate 2s infinite alternate;
+    }
+    .pulse2 {
+        animation: pulsate2 5s infinite alternate;
+    }
+
+    .pupil {
+      width: 18px;
+      height: 18px;
+      background-color: #070707;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+ 
+    }
+
+    .eye-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    #topright {
+      display: none;
+   
+    }
+    #topleft {
+      display: block;
+   
+    }
+
+    .free {
+      cursor: pointer;
+    }
+
+    #container {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #timerM {
+            font-size: 2em; /* Set your desired font size */
+            display: block;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        #PP {
+            font-size: 3.5em; /* Set your desired font size */
+            display: block;
+            cursor: pointer;
+        }
+
+        button {
+            font-size: 1.5em; /* Set your desired font size */
+            padding: 10px 20px;
+            background-color: #3498db; /* Set your desired button color */
+            color: #fff; /* Set your desired text color */
+            border: none;
+            cursor: pointer;
+        }
+
+     /* Hide the default checkbox */
+     .toggle-checkbox {
+            display: none;
+        }
+
+        /* Style the toggle switch label */
+        .toggle-label {
+            display: inline-block;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        /* Style the toggle switch handle */
+        .toggle-handle {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        #note {
+            width: 400px;
+            height: 200px;
+      position: relative;  
+      outline: none; /* Remove default focus outline */
+            border: none;  /* Remove default border */
+            padding: 10px;
+            margin: 10px;
+            overflow-y: auto;
+            background-color: #fff;
+        }
+
+        #botright {
+          display: block;
+     
+      }
+      #botleft {
+        display: block;
+      }
+      #im {
+            color:#0c0c0c;
+            display: block;
+        }
+
+
+        /* Style for the caret when the div is focused */
+        #note:focus {
+            border: 1px solid rgb(3, 3, 3); /* Add a border to indicate focus */
+            box-shadow: 0 0 5px rgba(5, 5, 5, 0.5); /* Add a box shadow for focus effect */
+        }
+ 
+
+        /* Move the handle to the right when the checkbox is checked */
+        .toggle-checkbox:checked + .toggle-label .toggle-handle {
+            transform: translateX(30px);
+        }
+
+        .hidden {
+            display: none;
+
+        }
+
+        .emoji {
+            filter: grayscale(100%)  contrast(2.0); 
+        }
+
+        .point {
+            cursor: pointer;
+        }
+
+        .fade {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.fade.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+ 
+    @keyframes pulsate {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes pulsate2 {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.02);
+      }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 88vh;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle, rgb(249, 247, 236) 15%,  rgb(239, 243, 224) 22%, rgb(239, 243, 224) 10%,rgba(248, 243, 182, 0.603) 48%);
+    }
+
+    #cont1 {
+        width: 100%;
+      height: 300px;
+  
+
+      align-items: center;
+            justify-content: center;
+      position: absolute;
+      bottom: 5px;
+            left: 0px;
+            text-align: center;
+z-index: 1000;
+    }
+
+    .eye-container {
+      position: relative;
+    }
+
+    .eye {
+      width: 130px;
+      height: 130px;
+      position: relative;
+    
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(231, 207, 183, 0.813) 20%,   rgb(164, 164, 164) 50%);
+      z-index: 1;
+    }
+
+    .pulse {
+        animation: pulsate 2s infinite alternate;
+    }
+    .pulse2 {
+        animation: pulsate2 4.5s infinite alternate;
+    }
+
+    .pupil {
+      width: 28px;
+      height: 28px;
+      background-color: #070707;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+ 
+    }
+
+    .eye-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    #topright {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+   
+    }
+    #topleft {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+   
+    }
+
+    .free {
+      cursor: pointer;
+    }
+
+    #container {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #timerM {
+            font-size: 2em; /* Set your desired font size */
+            display: block;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        #PP {
+            font-size: 3.5em; /* Set your desired font size */
+            display: block;
+            cursor: pointer;
+        }
+
+        button {
+            font-size: 1.5em; /* Set your desired font size */
+            padding: 10px 20px;
+            background-color: #3498db; /* Set your desired button color */
+            color: #fff; /* Set your desired text color */
+            border: none;
+            cursor: pointer;
+        }
+
+     /* Hide the default checkbox */
+     .toggle-checkbox {
+            display: none;
+        }
+
+        /* Style the toggle switch label */
+        .toggle-label {
+            display: inline-block;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        /* Style the toggle switch handle */
+        .toggle-handle {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        #note {
+            width: 400px;
+            height: 200px;
+      position: relative;  
+      outline: none; /* Remove default focus outline */
+            border: none;  /* Remove default border */
+            padding: 10px;
+            margin: 10px;
+            overflow-y: auto;
+            background-color: #fff;
+        }
+
+        #botright {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+        z-index: 2000000;
+     
+      }
+      #botleft {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        padding: 10px;
+        z-index: 200000;
+      }
+      #im {
+            color:#0c0c0c;
+            position: block;
+        
+      
+        }
+        #im0 {
+            color:#0c0c0c;
+            position: block;
+        
+      
+        }
+
+     
+          .info {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.0em;
+  cursor: pointer;
+}
+
+.info:hover,
+.info:active,
+.info:visited {
+  color: black; /* Set the text color to black for hover, active, and visited states */
+}
+
+.info2 {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.2em;
+  cursor: pointer;
+
+}
+
+.info2:hover,
+.info2:active,
+.info2:visited {
+  color: black; /* Set the text color to black for hover, active, and visited states */
+}
+
+
+
+        /* Style for the caret when the div is focused */
+        #note:focus {
+            border: 1px solid rgb(3, 3, 3); /* Add a border to indicate focus */
+            box-shadow: 0 0 5px rgba(5, 5, 5, 0.5); /* Add a box shadow for focus effect */
+        }
+ 
+
+        /* Move the handle to the right when the checkbox is checked */
+        .toggle-checkbox:checked + .toggle-label .toggle-handle {
+            transform: translateX(30px);
+        }
+
+        .hidden {
+            display: none;
+
+        }
+
+        .emoji {
+            filter: grayscale(100%)  contrast(2.0); 
+        }
+
+        .point {
+            cursor: pointer;
+        }
+
+        .fade {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.fade.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+ 
+    @keyframes pulsate {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes pulsate2 {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+}
+
+  </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJJLE3ZKTL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJJLE3ZKTL');
+</script>
+<body>
+  <div id="cont0">
+  <div id="botright"  class="fade" > <label>
+    <input type="checkbox" id="introCheckbox" checked   class="emoji">Intro
+  </label> &nbsp; &nbsp;&nbsp; 
+         <select id="options" name="options"   class="emoji">
+      <option value="none">No Guidance</option>
+      <option value="mindfulness" selected>Mindfulness</option>
+      <option value="fear">Fear & Uncertainty</option>
+      <option value="love">Loving Kindness</option>
+      <option value="people">Social Anxiety</option>
+  </select>
+&nbsp; &nbsp; 
+<select id="audio-dropdown">
+  <option value="" selected>No Brain Stimulation</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/1Hz-Delta--.mp3">Pure Delta 1Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/2.5Hz-Delta--.mp3">Pure Delta 2.5Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/2.5-5Hz-Delta~Theta--.mp3">Mixed Delta/Theta 2.5/5Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/5Hz-Theta--.mp3">Pure Theta 5Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/7Hz-Theta--.mp3">Pure Theta 7Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/10Hz-Alpha--.mp3">Pure Alpha 10Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/12Hz-Alpha--.mp3">Pure Alpha 12Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/18Hz-Beta--.mp3">Pure Beta 18Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/27Hz-Beta--.mp3">Pure Beta 27Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/40Hz-Gamma--.mp3">Pure Gamma 40Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/70Hz-Gamma--.mp3">Pure Gamma 70Hz</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/Brownian-Noise--.mp3">Pure Brown Noise</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/Pink-Noise--.mp3">Pure Pink Noise</option>
+  <option value="https://wizard.ofoz.org/pure-brainwave-stimulation/White-Noise--.mp3">Pure White Noise</option>
+</select>
+  &nbsp;    &nbsp; <a id="dice" class="fade info2">🎲</a>  &nbsp;    &nbsp; <br />
+</div><br />
+  
+
+     <div id="botleft"  class="fade" >   
+      <label for="gapSlider"></label>
+      <input type="range" id="gapSlider" min="7" max="40" step="2"    class="emoji">
+      Gap: <span id="selectedGap">9</span>s &nbsp; &nbsp; &nbsp; <a href="info.html" class="fade info hidden">ⓘ INFO</a>
+  
+  </div>
+  <br />
+<div id="topright"  class="fade" >   
+    <img src="fs.png" id="fs"  width="32px" class="point"  alt="Fullscreen"> 
+   </div>
+</div>
+
+  <div class="eye-container"  id="eye-container">
+    <div class="eye" id="eye">
+      <div class="pupil"></div>
+    </div>
+    <img src="eye2.png" id="ie" alt="Eye Image" class="eye-image">
+  </div>
+  <div id="note" class="hidden" contenteditable="true"><ul><li></li></ul></div>
+
+  <div id="cont1"><br /><br /><br /><br />
+  
+
+   
+    <span id="PP" class="fade"  > <img src="play.png" width="32px"  alt="Play" id="Play"><img src="pause.png" width="32px" class="hidden"  alt="Pause" id="Pause"></span><br />
+    <!-- Add a minute slider -->
+
+  <span id="timerM" title="Hide">0:00</span><br />
+
+  
+  
+  
+
+
+<div id="topleft"  class="fade" ><img src="pad.png" id="pimg"  width="28px"  class="point"    alt="Pad"> <br /><br /><br /><br /><br /><br /><br /><br />
+</div> 
+
+</div>
+ 
+
+
+  <audio id="audio-element"  controls class="hidden">
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+<script>
+let timerElementM = document.getElementById('timerM');
+let timerIntervalM;
+let secondsM = 0;
+let minutesM = 0;
+const delay = 300;
+var gap =   localStorage.getItem('gap');
+var gapp = Number(gap);
+var gappy = gapp * 1000;
+let index = 0;
+let speechSynthesisUtterance;
+let activeArray = 1;
+var intervalID;
+var med = 0;
+var i = document.getElementById('eye-container');
+var eye = document.getElementById('eye');
+var pause = document.getElementById('Pause');
+var play = document.getElementById('Play');
+var gapSlider = document.getElementById('gapSlider');
+var selectedGapDisplay = document.getElementById('selectedGap');
+
+var switcher = 0;
+var isfs = 0;
+var intro = "1";
+var stym = localStorage.getItem('stym');
+
+const audioElement = document.getElementById("audio-element");
+      const dropdown = document.getElementById("audio-dropdown");
+      const playPauseButton = document.getElementById("PP");
+
+const introCheckbox = document.getElementById('introCheckbox');
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+ 
+document.getElementById("dice").addEventListener("click", randomlySelectOptions);
+  document.getElementById("fs").addEventListener("click", toggleFullscreen);
+  document.getElementById("PP").addEventListener("click", meditate);
+  document.getElementById("pimg").addEventListener("click", pad);
+
+
+
+
+});
+
+
+
+
+
+function randomlySelectOptions() {
+  var emojiSelect = document.getElementById("options");
+  var audioSelect = document.getElementById("audio-dropdown");
+
+  var randomEmojiIndex = Math.floor(Math.random() * emojiSelect.options.length);
+  var randomAudioIndex = Math.floor(Math.random() * audioSelect.options.length);
+
+  emojiSelect.selectedIndex = randomEmojiIndex;
+  audioSelect.selectedIndex = randomAudioIndex;
+  med = 1;
+  meditate();
+
+  // Dispatch 'change' event for emojiSelect
+  var emojiChangeEvent = new Event('change');
+  emojiSelect.dispatchEvent(emojiChangeEvent);
+
+  // Dispatch 'change' event for audioSelect
+  var audioChangeEvent = new Event('change');
+  audioSelect.dispatchEvent(audioChangeEvent);
+}
+
+
+
+if (stym === "" || stym === null) {
+  stym = "";
+} else {
+  document.getElementById('audio-dropdown').value = stym;
+}
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('audio-dropdown').addEventListener('change', function () {
+                const selectedOption = this.value;
+              
+                localStorage.setItem('stym', selectedOption);
+                stym = selectedOption;
+                med = 1;
+                stopSpeechLoop();
+
+                meditate();
+         
+             
+            }); 
+ 
+            });
+       
+
+
+
+// Load the checkbox state from local storage on page load
+window.addEventListener('DOMContentLoaded', () => {
+  const savedState = localStorage.getItem('introState');
+if (savedState == "1"){
+  introCheckbox.checked = true;
+} 
+if (savedState == "0"){
+  introCheckbox.checked = false;
+  intro = "0";
+} 
+
+
+});
+
+// Listen for the checkbox change event
+introCheckbox.addEventListener('change', saveIntroStateToLocalStorage);
+
+function saveIntroStateToLocalStorage() {
+  // Save the current state of the checkbox to local storage
+  localStorage.setItem('introState', introCheckbox.checked ? '1' : '0');
+  intro = localStorage.getItem('introState');
+  med = 0;
+  switcher = 0;
+    stopSpeechLoop();
+clearInterval(timerIntervalM);
+i.classList.remove('pulse2');
+eye.classList.remove('pulse');
+play.classList.remove('hidden');
+pause.classList.add('hidden');
+fadeDivs.forEach(div => {
+    div.classList.remove('hidden');
+});
+if (document.fullscreenElement || document.webkitFullscreenElement ||
+          document.mozFullScreenElement || document.msFullscreenElement) {
+        // Exit fullscreen
+      
+if (isfs == 1){
+toggleFullscreen();
+};
+          };
+};
+
+
+if (gap === "" || gap === null) {
+  selectedGapDisplay.textContent = "10";
+  localStorage.setItem('gap', '10');
+  gap = "10";
+ } else {
+  selectedGapDisplay.textContent = gap;
+  gapSlider.value = Number(gap);
+
+ }
+
+function updateGapSliderValue() {
+
+     stopSpeechLoop();
+
+   var selectedOption =  gapSlider.value;
+  selectedGapDisplay.textContent = gapSlider.value;
+  localStorage.setItem('gap', selectedOption);
+  gap = selectedOption; 
+  gappy = gap * 1000
+
+
+  if (med == 1) { 
+ 
+      startSpeechLoop();
+
+};
+};
+
+
+window.speechSynthesis.onvoiceschanged = function() {
+  const updatedVoices = window.speechSynthesis.getVoices();
+};
+
+function stopSpeechLoop() {
+ 
+    clearInterval(intervalID);
+      intervalID = null; // Clear the intervalID
+      window.speechSynthesis.cancel();
+     
+
+}
+
+
+function startSpeechLoop() {
+  // Clear any existing speech loop
+  stopSpeechLoop();
+
+  // Start a new speech loop with the updated delay
+  intervalID = setInterval(() => {
+
+    var randomItem = getRandomItem(activeArray === 1 ? mindfulness1 : mindfulness2);
+
+    if (mtype == "fear") {
+      randomItem = getRandomItem(activeArray === 1 ? fear1 : fear2);
+    }
+    if (mtype == "people") {
+      randomItem = getRandomItem(activeArray === 1 ? people1 : people2);
+    }
+    if (mtype == "love") {
+      randomItem = getRandomItem(activeArray === 1 ? love1 : love2);
+    }
+    const speed = 0.9;
+    const voice = getAustralianVoice();
+
+    speechSynthesisUtterance = new SpeechSynthesisUtterance(randomItem);
+    speechSynthesisUtterance.rate = speed;
+    speechSynthesisUtterance.voice = voice;
+    window.speechSynthesis.speak(speechSynthesisUtterance);
+
+    // Toggle activeArray
+    activeArray = activeArray === 1 ? 2 : 1;
+  }, gappy);
+}
+
+
+
+// Attach the function to the gap slider's input event
+document.getElementById('gapSlider').addEventListener('input', updateGapSliderValue);
+
+var mtype = localStorage.getItem('mtype');
+if (mtype === "" || mtype === null) {
+  var dropdowner = document.getElementById("options");
+var selectedValue = dropdowner.value;
+localStorage.setItem('mtype', selectedValue);
+              mtype = selectedValue;
+} else {
+  document.getElementById('options').value = mtype;
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('options').addEventListener('change', function () {
+                const selectedOption = this.value;
+              
+                localStorage.setItem('mtype', selectedOption);
+                mtype = selectedOption;
+                switcher = 0;
+                stopSpeechLoop();
+                med = 1;
+                meditate();
+                index = 0;
+ 
+            });
+        });
+
+
+
+
+
+
+
+        const note = document.getElementById('note');
+            var eyeContainerElement = document.getElementById('eye-container');
+var notes = 0;
+function pad() {
+    if (notes == 0){
+notes = 1;
+
+         eyeContainerElement.style.display = 'none';
+                note.style.display = 'block';
+                note.focus();
+
+    } else {
+        notes = 0;
+      
+                eyeContainerElement.style.display = 'block';
+                note.style.display = 'none';
+            
+    }
+
+    
+}
+
+// Get the note element
+
+
+// Load the text from local storage on page load
+// Load the HTML from local storage on page load
+window.addEventListener('DOMContentLoaded', () => {
+  const savedHTML = localStorage.getItem('html');
+  if (savedHTML) {
+    note.innerHTML = savedHTML;
+  }
+  if (note.textContent.trim() == '') {
+    // If it's empty, add the default content
+    note.innerHTML = '<ul><li></li></ul>';
+  }
+});
+
+// Listen for input/change events on the note element
+note.addEventListener('input', saveHTMLToLocalStorage);
+
+function saveHTMLToLocalStorage() {
+  // Save the current HTML content to local storage
+  localStorage.setItem('html', note.innerHTML);
+}
+
+
+
+
+
+
+function utterance() {
+  let currentArrayName = mtype + '0';
+
+let currentArray =  eval(currentArrayName);
+  var into = Number(intro);
+  if (into == 0){
+
+    if (mtype == 'none' ){
+      return;
+  
+} else {
+  currentArray = eval(currentArrayName);
+  index = 0; // Reset index to start from the beginning
+  switcher = 1;
+   startSpeechLoop();
+ 
+}
+
+    return;
+  
+  }
+
+
+  if (mtype == 'none'){
+
+} else {
+  if (index < currentArray.length) {
+   
+    // Use Web Speech API for text-to-speech
+    const synth = window.speechSynthesis;
+    const utterThis = new SpeechSynthesisUtterance(currentArray[index]);
+    
+    // Adjust the rate to make it slower (you can experiment with different values)
+    utterThis.rate = 1.0; // 0.8 is a slower rate
+
+    // Find the Irish voice
+    const voices = synth.getVoices();
+    const irishVoice = voices.find(voice => voice.lang === 'en-US');
+
+    if (irishVoice) {
+      utterThis.voice = irishVoice;
+    } else {
+      console.log('Irish voice not found. Using the default voice.');
+    }
+
+    synth.speak(utterThis);
+
+    index++;
+    utterThis.onend = () => {
+      setTimeout(utterance, delay);
+    };
+  } else {
+    // All items have been uttered, now call the randomM() function
+    if (mtype == 'none'){
+
+    } else {
+      currentArray = eval(currentArrayName);
+      index = 0; // Reset index to start from the beginning
+      switcher = 1;
+       startSpeechLoop();
+    }
+   
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+function getRandomItem(arr) {
+const randomIndex = Math.floor(Math.random() * arr.length);
+return arr[randomIndex];
+}
+
+function getAustralianVoice() {
+const voices = window.speechSynthesis.getVoices();
+return voices.find(voice => voice.lang === 'en-US');
+}
+
+// Start the speech loop
+
+
+
+
+
+// Function to update the timer display
+function updateTimerM() {
+secondsM++;
+if (secondsM == 60) {
+secondsM = 0;
+minutesM++;
+}
+timerElementM.innerHTML = `${minutesM}:${secondsM < 10 ? '0' : ''}${secondsM}`;
+}
+
+var fadeDivs = document.querySelectorAll('.fade');
+
+function meditate(){
+  
+if (med == 0) {
+
+  const selectedAudio = dropdown.value;
+          if (selectedAudio) {
+            audioElement.src = selectedAudio;
+            audioElement.play();
+       
+          }
+med = 1;
+if (switcher == 0){
+
+timerIntervalM = setInterval(updateTimerM, 1000); // Update every second (1000 milliseconds)
+utterance();
+} else {
+  timerIntervalM = setInterval(updateTimerM, 1000); // Update every second (1000 milliseconds)
+
+  startSpeechLoop();
+
+}
+
+
+// Add a class to the element
+i.classList.add('pulse2');
+eye.classList.add('pulse');
+play.classList.add('hidden');
+pause.classList.remove('hidden');
+fadeDivs.forEach(div => {
+    div.classList.add('hidden');
+}); 
+if (document.fullscreenElement || document.webkitFullscreenElement ||
+          document.mozFullScreenElement || document.msFullscreenElement) {
+        // Exit fullscreen
+          } else {
+if (isfs == 0){
+toggleFullscreen();
+};
+
+          }
+
+} else {
+    med = 0;
+    stopSpeechLoop();
+clearInterval(timerIntervalM);
+i.classList.remove('pulse2');
+eye.classList.remove('pulse');
+play.classList.remove('hidden');
+pause.classList.add('hidden');
+fadeDivs.forEach(div => {
+    div.classList.remove('hidden');
+    audioElement.pause();
+});
+if (isfs == 1){
+  if (document.fullscreenElement || document.webkitFullscreenElement ||
+          document.mozFullScreenElement || document.msFullscreenElement) {
+        // Exit fullscreen
+toggleFullscreen();
+          };
+};
+
+}
+
+
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class 'fade'
+   
+var looped = 0;
+
+    document.addEventListener('mousemove', function () {
+     if (looped == 0 && med == 1){   fadeDivs.forEach(div => {
+            // Toggle the 'hidden' class to initiate the fade effect
+            div.classList.remove('hidden');
+looped = 1;
+
+            // Set a timer to toggle the 'hidden' class after 2 seconds
+            setTimeout(() => {
+              if (med == 1){
+                div.classList.add('hidden');
+              }
+                looped = 0;
+            }, 4000);
+        }); 
+       };
+    });
+
+});
+
+
+
+
+
+
+
+    function toggleFullscreen() {
+      const element = document.documentElement; // Fullscreen the entire document
+  
+      if (document.fullscreenElement || document.webkitFullscreenElement ||
+          document.mozFullScreenElement || document.msFullscreenElement) {
+        // Exit fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+        isfs = 0;
+      } else {
+        // Enter fullscreen
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if (element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+        isfs = 1;
+      }
+    }
+
+
+
+
+
+  </script>
+ <script src="fullarrays.js"></script>
+</body>
+</html>
